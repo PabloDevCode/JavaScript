@@ -51,7 +51,7 @@ function modificarTarea(indice, nuevoNombre, nuevaFechaLimite = null) {
 // Funcion para mostrar el menu 
 function mostrarMenu() {
     console.log("--- Menu ---");
-    console.log("1. Agrregar tarea");
+    console.log("1. Agregar tarea");
     console.log("2. Eliminar tarea");
     console.log("3. Marcar tarea como completada");
     console.log("4. Modificar una tarea");
@@ -60,12 +60,12 @@ function mostrarMenu() {
 }
 
 // Funcion para interactuar con el usuario
-function interactuarConUsuario(params) {
+function interactuarConUsuario() {
     let opcion = -1;
 
     while (opcion != 0) {
         mostrarMenu();
-        opcion = parseInt(prompt("Ingrese la opcion seleccionada:"));
+        opcion = parseInt(prompt("Ingrese la opcion seleccionada: "));
 
         switch (opcion) {
             case 1:
@@ -89,10 +89,12 @@ function interactuarConUsuario(params) {
                 console.log("-- LISTA DE TAREAS --");
                 console.log(tareas);
                 break;
-
+            case 0:
+                console.log("Saliendo del Gestor");
             default:
                 console.log("El numero ingresado en invalido. Ingrese un nro del 0 al 5!")
                 break;
         }
     }
 }
+interactuarConUsuario();

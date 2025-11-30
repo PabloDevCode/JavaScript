@@ -6,7 +6,7 @@
 // opcion 1 
 
 let matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-//  indices      0        1        2
+//  indices      0            1        2
 
 // escrito de "otra manera" 
 // let matriz = [
@@ -62,7 +62,7 @@ console.table(matriz);
 // en este caso la columna 0 
 console.log("recorro columna 0");
 for (let i = 0; i < matriz.length; i++) {
-    console.log(matriz[i][0]);
+  console.log(matriz[i][0]);
 }
 
 //   RECORRER UNA FILA EN ESPECIFICO
@@ -70,7 +70,7 @@ for (let i = 0; i < matriz.length; i++) {
 console.log("recorro fila 2");
 
 for (let i = 0; i < matriz[2].length; i++) {
-    console.log(matriz[2][i]);
+  console.log(matriz[2][i]);
 }
 
 
